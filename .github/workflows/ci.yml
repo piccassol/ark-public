@@ -1,0 +1,56 @@
+name: ci
+on:
+push:
+pull_request:
+jobs:
+build-test:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+
+
+- name: Setup Node
+uses: actions/setup-node@v4
+with:
+node-version: '20'
+
+
+- name: Setup Python
+uses: actions/setup-python@v5
+with:
+python-version: '3.11'
+
+
+- name: Build TS SDK
+working-directory: sdk/ark-sdk-js
+run: |
+npm i
+npm run build
+
+
+- name: Build MSW package
+working-directory: msw
+run: |
+npm i
+npm run build
+
+
+- name: Smoke test Dev API
+working-directory: api-server
+run: |
+npm i
+npm run start &
+sleep 3
+curl -f http://localhost:8787/health
+curl -f http://localhost:8787/v1/auth/me
+curl -f http://localhost:8787/v1/credits/balance
+
+
+- name: Install Python SDK
+working-directory: sdk/ark-sdk-py
+run: |
+pip install -e .
+python - <<'PY'
+import requests
+print('ok')
+PY

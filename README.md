@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/ark-logo.png" alt="ARK Technologies Logo" width="400" />
+  <img src="[./assets/ark-logo.png" alt="ARK Technologies Logo](https://arktechnologies.ai/ark-logo.png)" width="400" />
 </p>
 
 <h1 align="center">ARK Technologies SDK & Developer Kit</h1>

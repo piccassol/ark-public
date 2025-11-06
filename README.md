@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/piccassol/ark-public/main/assets/ark-logo.png" alt="ARK Technologies Logo" width="400" />
+  <img src="./assets/ark-logo.png" alt="ARK Technologies Logo" width="400"/>
 </p>
 
 <h1 align="center">ARK Technologies SDK & Developer Kit</h1>

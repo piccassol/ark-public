@@ -1,0 +1,19 @@
+{
+"name": "ark-sdk-js",
+"version": "0.1.0",
+"description": "Lightweight TypeScript SDK for Ark APIs (auth, credits, billing placeholders)",
+"type": "module",
+"main": "dist/index.js",
+"types": "dist/index.d.ts",
+"scripts": {
+"build": "tsc -p .",
+"clean": "rimraf dist",
+"prepublishOnly": "npm run build"
+},
+"files": ["dist"],
+"keywords": ["ark", "sdk", "typescript"],
+"license": "MIT",
+"devDependencies": {
+"typescript": "^5.4.0"
+}
+}

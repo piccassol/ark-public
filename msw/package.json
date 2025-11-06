@@ -1,0 +1,22 @@
+{
+"name": "ark-msw",
+"version": "0.1.0",
+"type": "module",
+"main": "dist/index.js",
+"types": "dist/index.d.ts",
+"exports": {
+".": "./dist/index.js",
+"./browser": "./dist/browser.js",
+"./node": "./dist/node.js",
+"./handlers": "./dist/handlers.js"
+},
+"scripts": {
+"build": "tsc -p ."
+},
+"dependencies": {
+"msw": "^2.2.14"
+},
+"devDependencies": {
+"typescript": "^5.4.0"
+}
+}

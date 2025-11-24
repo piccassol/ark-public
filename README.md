@@ -9,8 +9,6 @@
 
 <p align="center">
 
-<a href="https://github.com/piccassol/ark-public/actions">
-  <img src="https://img.shields.io/github/actions/workflow/status/piccassol/ark-public/ci.yml?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions Status">
 </a>
 <a href="https://www.npmjs.com/package/ark-sdk-js">
   <img src="https://img.shields.io/npm/v/ark-sdk-js?style=for-the-badge&logo=npm&logoColor=white" alt="npm version">

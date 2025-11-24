@@ -38,7 +38,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 Clone the repo and install dependencies:
 
@@ -90,7 +90,7 @@ print(client.credits.get_balance())
 
 ---
 
-## 📦 SDK Packages
+## SDK Packages
 
 | SDK | Language | Package | Description |
 |-----|-----------|----------|-------------|
@@ -117,7 +117,7 @@ npm run dev
 
 ---
 
-## 🌐 MSW Handlers
+## MSW Handlers
 
 Mock Ark API responses directly in the browser using [MSW](https://mswjs.io/).
 
